@@ -9,9 +9,10 @@
   },
   "scripts": {
     "dev": "yarn lint && next dev",
-    "build": "yarn husky-precommit && next build",
+    "build": "yarn husky-commitmsg && next build",
     "start": "next start",
     "prepare": "husky install",
+    "husky-commitmsg": "yarn husky add .husky/commit-msg 'yarn commitlint --edit $1'",
     "husky-precommit": "npx husky add .husky/pre-commit \"yarn lint\"",
     "husky-prepush": "npx husky add .husky/pre-push \"yarn build\"",
     "lint": "next lint",
