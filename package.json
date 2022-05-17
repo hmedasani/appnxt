@@ -8,9 +8,12 @@
     "npm": "please-use-yarn"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "yarn lint && next dev",
+    "build": "yarn husky-precommit && next build",
     "start": "next start",
+    "prepare": "husky install",
+    "husky-precommit": "npx husky add .husky/pre-commit \"yarn lint\"",
+    "husky-prepush": "npx husky add .husky/pre-push \"yarn build\"",
     "lint": "next lint",
     "format": "prettier --write ."
   },
@@ -29,6 +32,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "12.1.6",
     "eslint-plugin-react": "^7.28.0",
+    "husky": "^8.0.1",
     "prettier": "^2.6.2",
     "typescript": "4.6.4"
   }
