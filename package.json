@@ -12,10 +12,6 @@
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
-    "prepare": "husky install && yarn husky-commitmsg && yarn husky-precommit && yarn husky-prepush",
-    "husky-commitmsg": "yarn husky add .husky/commit-msg 'yarn commitlint --edit $1'",
-    "husky-precommit": "npx husky add .husky/pre-commit \"yarn lint\"",
-    "husky-prepush": "npx husky add .husky/pre-push \"yarn build\"",
     "lint": "next lint",
     "format": "prettier --write ."
   },
