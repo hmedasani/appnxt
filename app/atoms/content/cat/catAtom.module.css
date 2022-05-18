@@ -1,0 +1,10 @@
+.container {
+    border: 1px solid gray;
+    font-size: large;
+    padding: 2rem;
+    background-color: blue;
+    color: white;
+}
+.container:hover{
+    background-color: black;
+}
