@@ -4,7 +4,7 @@ import { NextPageLayoutProps } from './page';
 const HomePage: NextPageLayoutProps = () => {
   return (
     <div className={styles.container}>
-      <h1>Home Page</h1>
+      <h1>Welcome World! This is the Home! Welcome!.. Oh! OOOh!</h1>
     </div>
   );
 };
