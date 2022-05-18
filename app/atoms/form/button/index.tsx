@@ -9,11 +9,7 @@ export interface ButtonAtomProps extends CommonProps, ButtonProps {
 const commonAttr = { automationid: 'ButtonAtom' };
 
 const ButtonAtom: React.FC<ButtonAtomProps> = ({ children }) => {
-  return (
-    <Button variant="contained" {...commonAttr}>
-      Outlined
-    </Button>
-  );
+  return <Button variant="contained" {...commonAttr} children={children} />;
 };
 
 export default ButtonAtom;
