@@ -1,6 +1,6 @@
-import { ButtonProps, styled } from '@mui/material';
-import Button from '@mui/material/Button';
+import { ButtonProps } from '@mui/material';
 import { CommonProps } from '../../../z_props';
+import styles from './buttonAtom.module.css';
 
 export interface ButtonAtomProps extends CommonProps, ButtonProps {
   children: any;
@@ -8,12 +8,8 @@ export interface ButtonAtomProps extends CommonProps, ButtonProps {
 
 const commonAttr = { automationid: 'ButtonAtom' };
 
-const Btn: React.FC<ButtonAtomProps> = ({ children }) => {
-  return <Button variant="contained" {...commonAttr} children={children} />;
+const ButtonAtom: React.FC<ButtonAtomProps> = ({ children }) => {
+  return <button className={styles.btn} {...commonAttr} children={children} />;
 };
-
-const ButtonAtom = styled(Btn)({
-  backgroundColor: 'red',
-});
 
 export default ButtonAtom;
