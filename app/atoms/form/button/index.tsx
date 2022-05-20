@@ -1,8 +1,7 @@
-import { ButtonProps } from '@mui/material';
 import { CommonProps } from '../../../z_props';
 import styles from './buttonAtom.module.css';
 
-export interface ButtonAtomProps extends CommonProps, ButtonProps {
+export interface ButtonAtomProps extends CommonProps {
   children: any;
 }
 
