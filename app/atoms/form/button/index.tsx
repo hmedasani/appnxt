@@ -1,14 +1,14 @@
-import { CommonProps } from '../../../z_props';
-import styles from './buttonAtom.module.css';
+import React from 'react';
+import { CommonProps } from '../../../../props_reusable';
 
-export interface ButtonAtomProps extends CommonProps {
-  children: any;
+function ButtonAtom(props: CommonProps) {
+  return (
+    <div>
+      <button className="bg-sky-600 hover:bg-sky-700 ...">
+        {props.children}
+      </button>
+    </div>
+  );
 }
-
-const commonAttr = { automationid: 'ButtonAtom' };
-
-const ButtonAtom: React.FC<ButtonAtomProps> = ({ children }) => {
-  return <button className={styles.btn} {...commonAttr} children={children} />;
-};
 
 export default ButtonAtom;

@@ -6,10 +6,9 @@
   "extends": [
     "next",
     "next/core-web-vitals",
-    "eslint:recommended",
+    "eslint:recommended"
     // "plugin:react/recommended",
-    // "airbnb",
-    "plugin:storybook/recommended"
+    // "airbnb"
   ],
   "globals": {
     "React": "readonly"
@@ -23,13 +22,5 @@
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint"],
-  "rules": {},
-  "overrides": [
-    {
-      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
-      "rules": {
-        "storybook/hierarchy-separator": "error"
-      }
-    }
-  ]
+  "rules": {}
 }

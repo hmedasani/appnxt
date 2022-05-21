@@ -17,11 +17,13 @@
     "husky-precommit": "npx husky add .husky/pre-commit \"yarn lint\"",
     "husky-prepush": "npx husky add .husky/pre-push \"yarn build\"",
     "lint": "next lint",
-    "format": "prettier --write .",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "format": "prettier --write ."
   },
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.0",
+    "@mui/material": "^5.8.0",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0"
@@ -30,14 +32,6 @@
     "@babel/core": "^7.17.12",
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
-    "@storybook/addon-actions": "^6.4.22",
-    "@storybook/addon-essentials": "^6.4.22",
-    "@storybook/addon-interactions": "^6.4.22",
-    "@storybook/addon-links": "^6.4.22",
-    "@storybook/builder-webpack5": "^6.4.22",
-    "@storybook/manager-webpack5": "^6.4.22",
-    "@storybook/react": "^6.4.22",
-    "@storybook/testing-library": "^0.0.11",
     "@types/node": "17.0.34",
     "@types/prettier": "^2.6.1",
     "@types/react": "18.0.9",
@@ -56,8 +50,5 @@
     "prettier": "^2.6.2",
     "tailwindcss": "^3.0.24",
     "typescript": "4.6.4"
-  },
-  "resolutions": {
-    "webpack": "^5"
   }
 }
