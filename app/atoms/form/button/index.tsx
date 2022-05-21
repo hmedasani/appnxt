@@ -4,7 +4,7 @@ import { CommonProps } from '../../../../props_reusable';
 function ButtonAtom(props: CommonProps) {
   return (
     <div>
-      <button className="bg-red-600 hover:bg-red-700 ...">
+      <button className="bg-sky-600 hover:bg-sky-700 ...">
         {props.children}
       </button>
     </div>
