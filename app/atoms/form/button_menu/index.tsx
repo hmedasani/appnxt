@@ -3,8 +3,8 @@ import Button, { ButtonProps } from '@mui/material/Button';
 import React from 'react';
 
 const ButtonNew = styled(Button)`
-  background-color: red;
-  color: white;
+  background: blue;
+  color: yellow;
 `;
 
 function ButtonMenu(props: ButtonProps) {
