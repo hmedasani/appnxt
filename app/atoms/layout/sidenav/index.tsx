@@ -120,7 +120,7 @@ export default function SidenavAtom() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Mini variant drawer
+            SuperApp
           </Typography>
         </Toolbar>
       </AppBar>
