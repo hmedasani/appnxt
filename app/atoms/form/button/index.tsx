@@ -1,14 +1,16 @@
+import { Button, ButtonProps, styled } from '@mui/material';
 import React from 'react';
 import { CommonProps } from '../../../../props_reusable';
+import buttonStyles from './buttonStyles';
 
-function ButtonAtom(props: CommonProps) {
-  return (
-    <div>
-      <button className="bg-sky-600 hover:bg-sky-700 ...">
-        {props.children}
-      </button>
-    </div>
-  );
+const Btn = styled(Button)`
+  ${buttonStyles}
+`;
+
+interface ButtonAtomProps extends ButtonProps, CommonProps {}
+
+function ButtonAtom(props: ButtonAtomProps) {
+  return <Btn {...props} />;
 }
 
 export default ButtonAtom;
