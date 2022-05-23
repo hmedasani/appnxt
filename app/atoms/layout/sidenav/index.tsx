@@ -8,6 +8,7 @@ import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import MuiDrawer from '@mui/material/Drawer';
+import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -18,6 +19,7 @@ import { CSSObject, styled, Theme, useTheme } from '@mui/material/styles';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
+import CardContainer from '../../../components/card';
 
 const drawerWidth = 240;
 
@@ -120,7 +122,7 @@ export default function SidenavAtom() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            SuperApp
+            RulesHere!
           </Typography>
         </Toolbar>
       </AppBar>
@@ -187,8 +189,41 @@ export default function SidenavAtom() {
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
-
-        <Typography paragraph>Text to be added!</Typography>
+        <Grid container spacing={3}>
+          <CardContainer title="Some issue 1" avatarLtr="R" avatarColr="red" />
+          <CardContainer title="Some issue 2" avatarLtr="B" avatarColr="blue" />
+          <CardContainer
+            title="Some issue 3"
+            avatarLtr="K"
+            avatarColr="green"
+          />
+          <CardContainer title="Some issue 4" avatarLtr="I" avatarColr="gray" />
+          <CardContainer
+            title="Some issue 5"
+            avatarLtr="P"
+            avatarColr="orange"
+          />
+          <CardContainer
+            title="Some issue 6"
+            avatarLtr="W"
+            avatarColr="skyBlue"
+          />
+          <CardContainer
+            title="Some issue 7"
+            avatarLtr="T"
+            avatarColr="lightBlue"
+          />
+          <CardContainer
+            title="Some issue 8"
+            avatarLtr="E"
+            avatarColr="maroon"
+          />
+          <CardContainer
+            title="Some issue 9"
+            avatarLtr="A"
+            avatarColr="paleBlue"
+          />
+        </Grid>
       </Box>
     </Box>
   );
