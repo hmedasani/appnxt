@@ -120,7 +120,7 @@ export default function SidenavAtom() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            SuperApp Now it is in begining shape!
+            SuperApp
           </Typography>
         </Toolbar>
       </AppBar>
