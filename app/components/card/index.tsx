@@ -49,7 +49,7 @@ export default function CardComponent(props: any) {
 
   return (
     <Grid item>
-      <Card sx={{ minWidth: 320, width: '29vw', maxWidth: '33vw' }}>
+      <Card sx={{ minWidth: 345, width: '29vw', maxWidth: '33vw' }}>
         <CardHeader
           avatar={
             <Avatar sx={{ bgcolor: `${avatarColr}` }} aria-label="recipe">
