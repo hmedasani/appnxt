@@ -1,6 +1,6 @@
 import { CssBaseline } from '@mui/material';
 import Head from 'next/head';
-import SidenavAtom from '../app/atoms/layout/sidenav';
+import TemplateT from '../app/templates/templateT';
 import { NextPageLayoutProps } from './page';
 
 const HomePage: NextPageLayoutProps = () => {
@@ -11,7 +11,7 @@ const HomePage: NextPageLayoutProps = () => {
       </Head>
       <CssBaseline />
 
-      <SidenavAtom />
+      <TemplateT />
     </>
   );
 };

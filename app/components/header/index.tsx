@@ -1,9 +1,9 @@
 import Container from '@mui/material/Container';
 import React from 'react';
-import AppbarAtom from '../atoms/layout/appbar';
-import BrandComponent from '../components/brand';
+import AppbarAtom from '../../atoms/layout/appbar';
+import BrandComponent from '../brand';
 
-function HeaderTemplate() {
+function HeaderComponent() {
   return (
     <AppbarAtom>
       <Container>
@@ -13,4 +13,4 @@ function HeaderTemplate() {
   );
 }
 
-export default HeaderTemplate;
+export default HeaderComponent;
