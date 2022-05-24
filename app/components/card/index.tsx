@@ -39,7 +39,7 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   }),
 }));
 
-export default function CardContainer(props: any) {
+export default function CardComponent(props: any) {
   const { title, avatarLtr, avatarColr } = props;
   const [expanded, setExpanded] = React.useState(false);
 

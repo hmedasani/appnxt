@@ -1,10 +1,10 @@
 import { Button, ButtonProps, styled } from '@mui/material';
 import React from 'react';
 import { CommonProps } from '../../../../props_reusable';
-import buttonStyles from './buttonStyles';
+import styles from './styles';
 
 const Btn = styled(Button)`
-  ${buttonStyles}
+  ${styles}
 `;
 
 interface ButtonAtomProps extends ButtonProps, CommonProps {}

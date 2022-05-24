@@ -1,17 +1,17 @@
 html,
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .templateTContainer {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-    
-  .templateTContentarea{
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-  }
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.templateTContentarea {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}

@@ -1,8 +1,8 @@
-import { styled } from '@mui/material';
+import { Container, styled } from '@mui/material';
+import styles from './styles';
 
 const Contentarea = styled('div')`
-  display: flex;
-  flex-grow: 1;
+  ${styles}
 `;
 
 interface ContentareaAtomProps {
@@ -10,5 +10,9 @@ interface ContentareaAtomProps {
 }
 
 export default function ContentareaAtom(props: ContentareaAtomProps) {
-  return <Contentarea>{props?.children}</Contentarea>;
+  return (
+    <Contentarea>
+      <Container>{props?.children}</Container>
+    </Contentarea>
+  );
 }

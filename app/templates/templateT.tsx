@@ -9,7 +9,7 @@ export default function TemplateT() {
       <HeaderComponent />
       <div className="templateTContentarea">
         <SidenavComponent />
-        <ContentareaComponent>ContentArea</ContentareaComponent>
+        <ContentareaComponent />
       </div>
     </div>
   );
