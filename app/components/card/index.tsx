@@ -40,7 +40,7 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
 }));
 
 export default function CardComponent(props: any) {
-  const { title, avatarLtr, avatarColr } = props;
+  const { title, avatarLtr, avatarColr, img, context } = props;
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -49,7 +49,7 @@ export default function CardComponent(props: any) {
 
   return (
     <Grid item>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ width: 320 }}>
         <CardHeader
           avatar={
             <Avatar sx={{ bgcolor: `${avatarColr}` }} aria-label="recipe">
@@ -64,17 +64,10 @@ export default function CardComponent(props: any) {
           title={title}
           subheader="September 14, 2016"
         />
-        <CardMedia
-          component="img"
-          height="194"
-          image="/static/images/cards/paella.jpg"
-          alt="Paella dish"
-        />
+        <CardMedia component="img" height="194" image={img} alt="Paella dish" />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            This impressive paella is a perfect party dish and a fun meal to
-            cook together with your guests. Add 1 cup of frozen peas along with
-            the mussels, if you like.
+            {context}
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
